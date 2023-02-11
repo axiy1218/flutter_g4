@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_g4/pages/animations_page/third_page/third_page.dart';
+import 'package:flutter_g4/utils/routes/animated_routes.dart';
 import 'package:flutter_g4/utils/routes/app_routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -41,7 +43,16 @@ class _HomePageState extends State<HomePage> {
                     Navigator.of(context)
                         .pushNamed(AppPageRoutes.first.routeName);
                   },
-                  child: const Text('First Page'))
+                  child: const Text('First Page')),
+              const SizedBox(
+                height: 20,
+              ),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.of(context).push(CustomAnimationPageRouteBuilder(
+                        child: const ThirdPage()));
+                  },
+                  child: const Text('Third Page')),
             ],
           ),
         ),
