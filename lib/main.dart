@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_g4/pages/animations_page/first/first_page.dart';
 import 'package:flutter_g4/pages/animations_page/second_page/second_page.dart';
 import 'package:flutter_g4/pages/animations_page/third_page/third_page.dart';
+import 'package:flutter_g4/pages/doctor/docrtor_page.dart';
 import 'package:flutter_g4/pages/home/home_page.dart';
 import 'package:flutter_g4/utils/routes/app_routes.dart';
 
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -23,9 +25,10 @@ class MyApp extends StatelessWidget {
         AppPageRoutes.home.routeName: (context) => const HomePage(),
         AppPageRoutes.first.routeName: (context) => const FirstPage(),
         AppPageRoutes.second.routeName: (context) => const SecondPage(),
-        AppPageRoutes.third.routeName: (context) => const ThirdPage()
+        AppPageRoutes.third.routeName: (context) => const ThirdPage(),
+        AppPageRoutes.doctor.routeName: (context) => const DoctorPage()
       },
-      initialRoute: AppPageRoutes.home.routeName,
+      initialRoute: AppPageRoutes.doctor.routeName,
     );
   }
 }
