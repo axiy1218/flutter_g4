@@ -3,6 +3,7 @@ enum AppPageRoutes {
   second('/second'),
   third('/third'),
   doctor('/doctor'),
+  wallet('/wallet'),
   account('/account'),
   home('/home');
 
