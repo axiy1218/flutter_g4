@@ -6,6 +6,7 @@ import 'package:flutter_g4/pages/banking/account/account_view.dart';
 import 'package:flutter_g4/pages/banking/wallet/wallet_page.dart';
 import 'package:flutter_g4/pages/crypto_pack/crypto_view.dart';
 import 'package:flutter_g4/pages/doctor/docrtor_page.dart';
+import 'package:flutter_g4/pages/doctor_list/doctors_view.dart';
 import 'package:flutter_g4/pages/home/home_page.dart';
 import 'package:flutter_g4/utils/routes/app_routes.dart';
 
@@ -32,9 +33,10 @@ class MyApp extends StatelessWidget {
         AppPageRoutes.doctor.routeName: (context) => const DoctorPage(),
         AppPageRoutes.account.routeName: (context) => const AccountView(),
         AppPageRoutes.wallet.routeName: (context) => const WalletPage(),
-        AppPageRoutes.crypto.routeName: (context) => const CryptoView()
+        AppPageRoutes.crypto.routeName: (context) => const CryptoView(),
+        AppPageRoutes.doctorList.routeName: (context) => const DoctorsListView()
       },
-      initialRoute: AppPageRoutes.crypto.routeName,
+      initialRoute: AppPageRoutes.doctorList.routeName,
     );
   }
 }

@@ -6,6 +6,7 @@ enum AppPageRoutes {
   wallet('/wallet'),
   account('/account'),
   crypto('/crypto'),
+  doctorList('/doctorListView'),
   home('/home');
 
   final String routeName;

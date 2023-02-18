@@ -35,6 +35,9 @@ class AppImages {
   static const etherium = '${_base}ethir.png';
 
   static const yellowBitcoin = '${_base}yellow_bitcoin.png';
+
+  static const doctor1 = '${_base}doctor1.png';
+  static const doctor2 = '${_base}doctor2.png';
 }
 
 class AppColors {
@@ -46,4 +49,5 @@ class AppColors {
   static const accountColor = Color(0xFF0131AF);
   static const cryptoColor = Color(0xFF5149F7);
   static const cryptoCardColor = Color(0xFFF9FAFF);
+  static const borderColor = Color(0xFFF7F8F8);
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_g4/pages/doctor/day_model.dart';
+import 'package:flutter_g4/pages/doctor/widget/app_text_widget.dart';
 import 'package:flutter_g4/utils/constants/constants.dart';
 import 'package:badges/badges.dart' as badge;
 
@@ -63,7 +64,7 @@ class _DoctorPageState extends State<DoctorPage> {
                     padding: EdgeInsets.symmetric(horizontal: 41),
                     child: SizedBox(
                         width: double.infinity,
-                        child: _AppTextWidget('About Doctor')),
+                        child: AppTextWidget('About Doctor')),
                   ),
 
                   const SizedBox(
@@ -89,7 +90,7 @@ class _DoctorPageState extends State<DoctorPage> {
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 41),
                     child: CupertinoListTile(
-                      title: const _AppTextWidget('Schedules'),
+                      title: const AppTextWidget('Schedules'),
                       padding: EdgeInsets.zero,
                       trailing: InkWell(
                         onTap: () {},
@@ -140,7 +141,7 @@ class _DoctorPageState extends State<DoctorPage> {
                   const Padding(
                     padding: EdgeInsets.symmetric(horizontal: 41),
                     child: CupertinoListTile(
-                      title: _AppTextWidget('Visit Hours'),
+                      title: AppTextWidget('Visit Hours'),
                       padding: EdgeInsets.zero,
                     ),
                   ),
@@ -224,7 +225,7 @@ class _DoctorAvatar extends StatelessWidget {
           height: 10,
         ),
         //*-------------Doctor name
-        _AppTextWidget(name),
+        AppTextWidget(name),
         Row(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -245,19 +246,6 @@ class _DoctorAvatar extends StatelessWidget {
           ],
         )
       ],
-    );
-  }
-}
-
-class _AppTextWidget extends StatelessWidget {
-  final String text;
-  const _AppTextWidget(this.text);
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      text,
-      style: AppTextStyles.mediumText.copyWith(fontSize: 20),
     );
   }
 }
