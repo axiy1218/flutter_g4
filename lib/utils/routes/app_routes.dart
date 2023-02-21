@@ -6,6 +6,10 @@ enum AppPageRoutes {
   wallet('/wallet'),
   account('/account'),
   crypto('/crypto'),
+  responsiveView('/responsive'),
+  apple('/apple'),
+  shopListView('/shoplist'),
+  gridPage('/grid'),
   doctorList('/doctorListView'),
   home('/home');
 
