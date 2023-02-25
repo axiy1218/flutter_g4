@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppLotties {
@@ -19,6 +20,29 @@ class AppTextStyles {
         fontWeight: FontWeight.w500,
         color: Colors.black);
   }
+
+  static TextStyle get racingMediumItalic {
+    return GoogleFonts.racingSansOne(
+        fontSize: 24.sp,
+        fontWeight: FontWeight.bold,
+        fontStyle: FontStyle.italic,
+        color: const Color(0xFF367bf5));
+  }
+
+  static TextStyle get robotoMedium {
+    return GoogleFonts.roboto(
+      fontSize: 18.sp,
+      fontWeight: FontWeight.w400,
+      fontStyle: FontStyle.normal,
+    );
+  }
+
+  static TextStyle get quickSandStyle {
+    return GoogleFonts.quicksand(
+        fontSize: 20.sp,
+        fontWeight: FontWeight.w500,
+        color: const Color(0xFF367bf5));
+  }
 }
 
 class AppImages {
@@ -38,6 +62,7 @@ class AppImages {
 
   static const doctor1 = '${_base}doctor1.png';
   static const doctor2 = '${_base}doctor2.png';
+  static const desktopAvatar = '${_base}desktop.png';
 }
 
 class AppColors {
@@ -50,4 +75,8 @@ class AppColors {
   static const cryptoColor = Color(0xFF5149F7);
   static const cryptoCardColor = Color(0xFFF9FAFF);
   static const borderColor = Color(0xFFF7F8F8);
+}
+
+class AppConstants {
+  static Size desktopDesignSize = const Size(1440, 1000);
 }

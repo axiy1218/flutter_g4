@@ -10,6 +10,7 @@ enum AppPageRoutes {
   apple('/apple'),
   shopListView('/shoplist'),
   gridPage('/grid'),
+  desktop('/desktop'),
   doctorList('/doctorListView'),
   home('/home');
 
