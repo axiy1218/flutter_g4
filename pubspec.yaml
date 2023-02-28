@@ -48,5 +48,11 @@ flutter:
     - family: Coco
       fonts:
         - asset: assets/fonts/coco/coco.ttf
+    
+    
+    - family: Gilroy
+      fonts:
+        - asset: assets/fonts/gilroy/gilroy-regular.ttf 
+        - asset: assets/fonts/gilroy/gilroy-regularitalic.ttf 
 
  

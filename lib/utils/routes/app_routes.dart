@@ -11,6 +11,8 @@ enum AppPageRoutes {
   shopListView('/shoplist'),
   gridPage('/grid'),
   desktop('/desktop'),
+  allChat('/allChat'),
+  chatRoom('/chatRoom'),
   doctorList('/doctorListView'),
   home('/home');
 

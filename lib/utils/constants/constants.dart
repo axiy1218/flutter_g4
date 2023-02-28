@@ -43,6 +43,14 @@ class AppTextStyles {
         fontWeight: FontWeight.w500,
         color: const Color(0xFF367bf5));
   }
+
+  static TextStyle get gilroy {
+    return const TextStyle(
+        fontSize: 20,
+        fontFamily: "Gilroy",
+        fontWeight: FontWeight.w600,
+        color: Colors.black);
+  }
 }
 
 class AppImages {
@@ -59,10 +67,16 @@ class AppImages {
   static const etherium = '${_base}ethir.png';
 
   static const yellowBitcoin = '${_base}yellow_bitcoin.png';
-
+  static const telegramUser = '${_base}telegram_user.png';
   static const doctor1 = '${_base}doctor1.png';
   static const doctor2 = '${_base}doctor2.png';
   static const desktopAvatar = '${_base}desktop.png';
+  static const chatMenu = "${_base}chat.png";
+  static const add = "${_base}add.png";
+  static const search = "${_base}search.png";
+  static const telegramUser1 = '${_base}telegram_user1.png';
+  static const telegramUser2 = '${_base}telegram_user2.png';
+  static const telegramUser3 = '${_base}telegram_user3.png';
 }
 
 class AppColors {
@@ -75,6 +89,9 @@ class AppColors {
   static const cryptoColor = Color(0xFF5149F7);
   static const cryptoCardColor = Color(0xFFF9FAFF);
   static const borderColor = Color(0xFFF7F8F8);
+  static const chatColor = Color(0xFF2675EC);
+
+  static const chatBackColor = Colors.white;
 }
 
 class AppConstants {

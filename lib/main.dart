@@ -17,6 +17,7 @@ import 'package:flutter_g4/pages/responsive/apple_page.dart';
 import 'package:flutter_g4/pages/responsive/gridpage.dart';
 import 'package:flutter_g4/pages/responsive/responsive_view.dart';
 import 'package:flutter_g4/pages/responsive/shoplist_view.dart';
+import 'package:flutter_g4/pages/telegram/all_chat/all_chat_view.dart';
 import 'package:flutter_g4/utils/constants/constants.dart';
 import 'package:flutter_g4/utils/routes/app_routes.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -53,7 +54,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-        designSize: AppConstants.desktopDesignSize,
+        designSize: (Platform.isMacOS || Platform.isWindows || Platform.isLinux)
+            ? AppConstants.desktopDesignSize
+            : ScreenUtil.defaultSize,
         minTextAdapt: true,
         splitScreenMode: true,
         builder: (BuildContext context, Widget? child) => child!,
@@ -81,9 +84,10 @@ class MyApp extends StatelessWidget {
             AppPageRoutes.shopListView.routeName: (context) =>
                 const ShoplistView(),
             AppPageRoutes.gridPage.routeName: (context) => const GridPage(),
-            AppPageRoutes.desktop.routeName: (context) => const DesktopView()
+            AppPageRoutes.desktop.routeName: (context) => const DesktopView(),
+            AppPageRoutes.allChat.routeName: (context) => const AllChatView()
           },
-          initialRoute: AppPageRoutes.desktop.routeName,
+          initialRoute: AppPageRoutes.allChat.routeName,
         ));
   }
 }
